@@ -6,7 +6,7 @@ from augmentation_techniques import mosaic, mix_up, cut_mix, grid_mask
 from utils import load_annotation, display_box, loading_bar
 
 
-show_image = True
+show_image = False
 write_img = True
 
 
@@ -40,8 +40,8 @@ def main():
     random.shuffle(data)
 
     # SAMPLES = len(data) * 0.1
-    # SAMPLES = int(TOTAL_SAMPLES / 4)
-    SAMPLES = 5
+    SAMPLES = int(TOTAL_SAMPLES / 4)
+    # SAMPLES = 5
 
     if write_img:
         f = open(f"{TARGET_ANNO}/augmented_annotaion.txt", 'w')
