@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import random
 from utils import resize_img, cutmix_loss, get_random_mask
-from config import DATA_DIR, IMAGE_SIZE
+from config import IMAGE_SIZE
 
 
 def mosaic(images, bboxes_list, num_box_threshod=1):
