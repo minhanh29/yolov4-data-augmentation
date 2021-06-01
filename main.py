@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import random
-from config import DATA_DIR, ANNO_DIR, TARGET_DIR, TARGET_ANNO, TOTAL_SAMPLES
+from config import DATA_DIR, ANNO_FILE, TARGET_DIR, TARGET_ANNO_FILE, TOTAL_SAMPLES
 from augmentation_techniques import mosaic, mix_up, cut_mix, grid_mask
 from utils import load_annotation, display_box, loading_bar
 
@@ -35,7 +35,7 @@ def unpack_data(data):
 
 
 def main():
-    data = load_annotation(f"{ANNO_DIR}/sample_annotation.txt")
+    data = load_annotation(ANNO_FILE)
     # shuffle all the images
     random.shuffle(data)
 
@@ -44,11 +44,11 @@ def main():
     # SAMPLES = 5
 
     if write_img:
-        f = open(f"{TARGET_ANNO}/augmented_annotaion.txt", 'w')
+        f = open(f"{TARGET_ANNO_FILE}", 'w')
 
     # mosaic
     count = 0
-    print("Mosaic is in process")
+    print("Mosaic is in progress")
     while True:
         # choose 4 images
         chosen_images = np.random.choice(data, 4, replace=False)
@@ -76,7 +76,7 @@ def main():
 
     # mix up
     count = 0
-    print("\nMix up is in process")
+    print("\nMix up is in progress")
     while True:
         # choose 4 images
         chosen_images = np.random.choice(data, 2, replace=False)
@@ -104,7 +104,7 @@ def main():
 
     # cut mix
     count = 0
-    print("\nCut mix is in process")
+    print("\nCut mix is in progress")
     while True:
         # choose 4 images
         chosen_images = np.random.choice(data, 2, replace=False)
@@ -132,7 +132,7 @@ def main():
 
     # grid mask
     count = 0
-    print("\nGrid mask is in process")
+    print("\nGrid mask is in progress")
     while True:
         # choose 4 images
         chosen_images = np.random.choice(data, 1, replace=False)

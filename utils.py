@@ -31,7 +31,7 @@ def get_data(line):
 
 
 def loading_bar(count, total):
-    i = int(count/total * 50)
+    i = int(count/total * 50) + 1
     sys.stdout.write('\r')
     sys.stdout.write('[%-50s] %d%%' % ('='*i, i*2))
     sys.stdout.flush()
