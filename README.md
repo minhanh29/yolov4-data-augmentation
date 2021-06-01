@@ -69,4 +69,4 @@ python3 main.py
 
 ## TODO
 
-Open the [yolov4-data-augmentation-demo.ipynb](yolov4-data-augmentation-demo.ipynb)file to see the demo usage.  
+Open the [yolov4-data-augmentation-demo.ipynb](yolov4-data-augmentation-demo.ipynb) file to see the demo usage.  
