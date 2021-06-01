@@ -53,7 +53,7 @@ python3 main.py
 
 #### Mosaic
 
-<img src="augmented_img/Mosaic_0.jpg" alr="mosaic" width='416' height='416' />
+<img src="augmented_img/Mosaic_4.jpg" alr="mosaic" width='416' height='416' />
 
 #### Mix Up
 
@@ -61,7 +61,7 @@ python3 main.py
 
 #### Cut Mix
 
-<img src="augmented_img/Cutmix_0.jpg" alr="cutmix" width='416' height='416' />
+<img src="augmented_img/Cutmix_4.jpg" alr="cutmix" width='416' height='416' />
 
 #### Grid Mask
 
@@ -69,4 +69,4 @@ python3 main.py
 
 ## TODO
 
-Open the yolov4-data-augmentation-demo.ipynb file to see the demo usage.  
+Open the [yolov4-data-augmentation-demo.ipynb](yolov4-data-augmentation-demo.ipynb)file to see the demo usage.  
